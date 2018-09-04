@@ -1,0 +1,110 @@
+body
+  background-color: #282828 //gray
+  color: #ffffff //white text color
+
+// Alignment Classes
+
+.section-center-page
+  height: calc(100vh - #{$navbar-height})
+  padding: 0
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  flex-grow: 1
+
+.center-all
+  height: 100%
+  padding: 0
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  flex-grow: 1
+
+.flex
+  display: flex
+
+// FLEX DIRECTION
+.flex-row
+  flex-direction: row
+.flex-col
+  flex-direction: column
+
+// FLEX JUSTIFY
+.flex-justify-start
+  justify-content: flex-start
+.flex-justify-end
+  justify-content: flex-end
+.flex-justify-center
+  justify-content: center
+.flex-justify-between
+  justify-content: space-between
+.flex-justify-around
+  justify-content: space-around
+
+// FLEX ALIGN ITEMS
+.flex-align-items-start
+  align-items: flex-start
+.flex-align-items-center
+  align-items: center
+.flex-align-items-end
+  align-items: flex-end
+
+// FLEX WRAP
+.flex-wrap
+  flex-wrap: wrap
+.flex-nowrap
+  flex-wrap: nowrap
+
+// SHORTCUTS / COMMON COMBINATIONS
+// total center
+.flex-center-all
+  justify-content: center
+  align-items: center
+
+
+// Font Size Classes
+
+.is-huge
+  font-size: 4rem
+.is-larger
+  font-size: 3rem
+.is-large
+  font-size: 2rem
+.is-medium
+  font-size: 1.5rem
+.is-small
+  font-size: 1rem
+
+// Color Classes
+
+.is-white
+  color: white !important
+
+// Style to be shared
+.navbar
+  background-color: #282828
+
+.logo
+  width: 8rem
+  height: 3rem
+  background-size: 8rem 3rem
+  background-image: url("/images/logo.png")
+  margin: 0.75rem
+
+a
+  &:not(.inline)
+    display: block
+
+.circular-image
+  object-fit: cover
+  width: 10rem
+  height: 10rem
+  border-radius: 50%
+
+.internal-link
+  display: initial !important
+
