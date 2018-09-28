@@ -9,6 +9,7 @@ app.use(cookieParser())
 app.use(cors())
 const port = process.env.PORT || 5000; // The default port is 5000 but you can change this
 
+app.use(express.static(__dirname + '/public'));
 
 // This line tells the node server to redirect any traffic to index.html
 // From there, React will take over and you can define your routes in main.js
